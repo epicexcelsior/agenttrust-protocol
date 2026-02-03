@@ -1,0 +1,43 @@
+{
+  "improvementMode": "continuous",
+  "checkpoints": {
+    "postImplementation": {
+      "enabled": true,
+      "triggers": ["code complete", "tests pass"],
+      "actions": [
+        "Review code for edge cases",
+        "Identify failure modes",
+        "Suggest optimizations",
+        "Propose missing features"
+      ]
+    },
+    "preSubmission": {
+      "enabled": true,
+      "triggers": ["48 hours before deadline"],
+      "actions": [
+        "Security audit",
+        "Performance review",
+        "Demo flow optimization",
+        "Documentation completeness"
+      ]
+    }
+  },
+  "improvementDimensions": [
+    "security",
+    "performance",
+    "robustness",
+    "userExperience",
+    "winningPotential"
+  ],
+  "contextManagement": {
+    "strategy": "hierarchicalSummaries",
+    "maxTokens": 100000,
+    "summarizeEvery": 5,
+    "keepInContext": [
+      "Current iteration goal",
+      "Key decisions made",
+      "Open questions",
+      "Critical code sections"
+    ]
+  }
+}
