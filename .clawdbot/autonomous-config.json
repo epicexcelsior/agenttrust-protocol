@@ -1,0 +1,44 @@
+{
+  "project": "AgentTrust Protocol",
+  "autonomyLevel": 3,
+  "iterationSystem": {
+    "currentIteration": 1,
+    "maxIterations": 10,
+    "iterationDuration": "2-4 hours",
+    "triggerConditions": [
+      "3+ open questions resolved",
+      "blocker encountered",
+      "human intervention requested"
+    ]
+  },
+  "decisionAuthority": {
+    "level1": "I decide autonomously",
+    "level2": "I decide with notification to human",
+    "level3": "I surface decision to human before executing"
+  },
+  "currentLevel3Decisions": [
+    "Task type selection (P1)",
+    "Reputation algorithm complexity (P2)",
+    "Dispute resolution speed (P3)"
+  ],
+  "storage": {
+    "projectRoot": "/home/epic/clawd/projects/agenttrust",
+    "obsidianSync": true,
+    "decisionLog": "/decisions/",
+    "iterationLog": "/iterations/",
+    "code": "/src/",
+    "docs": "/docs/"
+  },
+  "feedbackLoops": {
+    "forumMonitoring": "Every 30 min",
+    "researchUpdates": "Every 60 min",
+    "progressReports": "Every 2 hours or on milestone",
+    "humanCheckIn": "When Level 3 decision needed"
+  },
+  "deployment": {
+    "target": "Cloudflare Pages",
+    "frontend": "React + TypeScript",
+    "contracts": "Anchor (Solana)",
+    "backend": "Cloudflare Workers"
+  }
+}
