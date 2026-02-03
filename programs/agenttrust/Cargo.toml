@@ -1,0 +1,21 @@
+[package]
+name = "agenttrust"
+version = "0.1.0"
+description = "AgentTrust Protocol - Reputation and trust layer for agent-to-agent transactions"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "agenttrust"
+
+[features]
+default = []
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+solana-program = "1.16.0"

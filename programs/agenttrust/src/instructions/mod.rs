@@ -1,0 +1,21 @@
+pub mod register_agent;
+pub mod create_task;
+pub mod claim_task;
+pub mod submit_task;
+pub mod confirm_task;
+pub mod dispute_task;
+pub mod submit_evidence;
+pub mod resolve_dispute;
+pub mod update_reputation;
+pub mod increase_stake;
+
+pub use register_agent::*;
+pub use create_task::*;
+pub use claim_task::*;
+pub use submit_task::*;
+pub use confirm_task::*;
+pub use dispute_task::*;
+pub use submit_evidence::*;
+pub use resolve_dispute::*;
+pub use update_reputation::*;
+pub use increase_stake::*;
